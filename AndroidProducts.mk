@@ -26,6 +26,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/XOS.mk \
-    $(LOCAL_DIR)/XOS_e4.mk \
+    $(LOCAL_DIR)/lineage.mk \
+    $(LOCAL_DIR)/lineage_e4.mk \
     $(LOCAL_DIR)/e4.mk \
