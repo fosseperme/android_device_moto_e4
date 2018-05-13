@@ -34,7 +34,9 @@ Thanks to olegsvs, danielhk, Zormax, xcore995, SRT.
 - ...
 
 
+
 NOTE :
+
 Apply these manual edit to lineage-15.0/15.1 source before building the rom
 
 with nano editor, edit these files by Commenting the line :
@@ -53,12 +55,15 @@ Comment line : 401
 
 nano system/core/init/init.cpp
 
-Copy this SkUserConfig.h to destination external/skia/include/core with below command
+Copy this SkUserConfig.h and SkUserConfigManual.h to destination external/skia/include/core with below command
 
 cp external/skia/include/config/SkUserConfig.h external/skia/include/core
+cp external/skia/include/config/SkUserConfigManual.h external/skia/include/core
 
-:Sensors HAL (ONLY WHEN...!)
+Sensors HAL 
 
 when building with : PRODUCT_PACKAGES += android.hardware.sensors@1.0-service ,it's advisable to locate the Sensors.cpp $location :hardware/interfaces/sensors/1.0/default/Sensors.cpp and modify it fromCHECK_GE(getHalDeviceVersion(), SENSORS_DEVICE_API_VERSION_1_3); to CHECK_GE(getHalDeviceVersion(), SENSORS_DEVICE_API_VERSION_1_0);
 
 see line here : https://github.com/LineageOS/android_hardware_interfaces/blob/621821f3191754678125a44a1f9b4dbd69f76541/sensors/1.0/default/Sensors.cpp#L98
+
+Finally apply patches present into device/patches
