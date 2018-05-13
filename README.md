@@ -30,5 +30,5 @@ Thanks to olegsvs, danielhk, Zormax, xcore995, SRT.
 - [ ] Fingerprint
 - [ ] Bluetooth
 - [x] Sensors
-- [ ] Hotspot
+- [X] Hotspot
 - ...
