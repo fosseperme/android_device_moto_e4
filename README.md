@@ -28,7 +28,7 @@ Thanks to olegsvs, danielhk, Zormax, xcore995, SRT.
 - [ ] Camera, flashlight
 - [x] Radio
 - [ ] Fingerprint
-- [ ] Bluetooth
+- [X] Bluetooth
 - [x] Sensors
 - [X] Hotspot
 - ...
