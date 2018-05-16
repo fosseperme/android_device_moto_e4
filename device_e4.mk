@@ -107,12 +107,6 @@ PRODUCT_PACKAGES += \
     libtinymix \
     libtinyxml
 
-# Audio
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/audio_device.xml:system/vendor/etc/audio_device.xml \
-    $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:system/vendor/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/configs/audio/a2dp_audio_policy_configuration.xml:/system/vendor/etc/a2dp_audio_policy_configuration.xml
-
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
@@ -194,15 +188,8 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
     lights.mt6737m
-    
-# Shim libraries
-PRODUCT_PACKAGES += \
-    libmtkshim_gui \
-    libmtkshim_audio \
-    libmtkshim_omx \
-    libmtkshim_ui \
-    libmtkshim_xlog
-    
+   
+
 # GPS HAL
 PRODUCT_PACKAGES += \
     android.hardware.gnss@1.0-impl
