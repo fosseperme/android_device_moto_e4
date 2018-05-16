@@ -38,6 +38,7 @@ bin/wifi2agps
 bin/memsicd
 bin/ccci_fsd
 bin/s62xd
+bin/hw/rilproxy
 lib{,64}/libMtkOmxFlacDec.so
 lib{,64}/libcam.camadapter.so
 lib{,64}/libcameracustom.so
@@ -218,6 +219,8 @@ lib{,64}/libaudiosetting.so
 lib{,64}/libdngop.so
 lib{,64}/libnvramagentclient.so
 lib{,64}/libpalwlan_mtk.so
+lib{,64}/libifcutils_mtk.so
+lib{,64}/vendor.mediatek.hardware.radio.deprecated@1.1_vendor.so
 usr/keylayout/mtk-kpd.kl
 usr/keylayout/ACCDET.kl
 vendor/lib{,64}/libwvdrm_L3.so
@@ -260,7 +263,7 @@ etc/.tp/thermal.mid.conf
 etc/.tp/thermal.high.conf
 etc/.tp/thermal.off.conf
 etc/.tp/thermal.low.conf
-
+etc/init/rild.rc
 lib{,64}/libpqservice.so
 lib{,64}/libgas.so
 lib{,64}/libviagpsrpc.so
