@@ -137,6 +137,14 @@ BACKLIGHT_PATH := /sys/class/leds/lcd-backlight/brightness
 # RIL
 BOARD_RIL_CLASS := ../../../device/moto/e4/ril/
 
+# Include needed symbols
+TARGET_INCLUDE_XLOG_SYMBOLS := true
+TARGET_INCLUDE_AUDIO_SYMBOLS := true
+TARGET_INCLUDE_UI_SYMBOLS := true
+TARGET_INCLUDE_GUI_SYMBOLS := true
+TARGET_INCLUDE_CAMERA_SYMBOLS := true
+include $(DEVICE_PATH)/libmtkshims/symbols.mk
+
 # GPS
 BOARD_GPS_LIBRARIES :=true
 BOARD_CONNECTIVITY_MODULE := MT6630
