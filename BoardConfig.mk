@@ -143,7 +143,7 @@ TARGET_INCLUDE_AUDIO_SYMBOLS := true
 TARGET_INCLUDE_UI_SYMBOLS := true
 TARGET_INCLUDE_GUI_SYMBOLS := true
 TARGET_INCLUDE_CAMERA_SYMBOLS := true
-include $(DEVICE_PATH)/libmtkshims/symbols.mk
+include device/moto/e4/libmtkshims/symbols.mk
 
 # GPS
 BOARD_GPS_LIBRARIES :=true
