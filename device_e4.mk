@@ -199,7 +199,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libmtkshim_gui \
     libmtkshim_audio \
-    libmtkshim_camera \
     libmtkshim_omx \
     libmtkshim_ui \
     libmtkshim_xlog
